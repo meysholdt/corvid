@@ -2,6 +2,9 @@ image:
   file: .gitpod.dockerfile
 ports:
 - port: 6080
+  onOpen: open-preview
+- port: 5900
+  onOpen: ignore
 tasks:
 - init: yarn
   command: node packages/corvid-cli/src/index.debug.js login
