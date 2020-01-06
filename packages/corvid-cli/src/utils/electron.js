@@ -37,7 +37,7 @@ function launch(file, options = {}, callbacks = {}, args = []) {
 
   const cp = childProcess.spawn(
     electron,
-    [path.resolve(path.join(file)), ...args],
+    ["--no-sandbox", path.resolve(path.join(file)), ...args],
     {
       ...options
     }
