@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.dockerfile
+ports:
+- port: 6080
+tasks:
+- init: yarn
+  command: npx corvid login
