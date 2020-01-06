@@ -4,4 +4,4 @@ ports:
 - port: 6080
 tasks:
 - init: yarn
-  command: npx corvid login
+  command: node packages/corvid-cli/src/index.debug.js login
